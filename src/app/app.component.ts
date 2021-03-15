@@ -1,3 +1,4 @@
+// sama komponenta
 import { Component } from '@angular/core';
 
 @Component({
