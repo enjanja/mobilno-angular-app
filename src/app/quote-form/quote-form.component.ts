@@ -15,4 +15,11 @@ export class QuoteFormComponent {
     console.log('Quote added');
     this.fullQuote = `'${this.text}' - ${this.author}`;
   }
+
+  onAddAuthor(event: Event): void{
+    console.log(event);
+    console.log(event.target);
+    this.author = (event.target as HTMLInputElement).value;
+  }
+  
 }

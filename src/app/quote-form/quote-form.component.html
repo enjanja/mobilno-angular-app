@@ -6,14 +6,22 @@
             <div class="field">
                 <label class="label">Quote</label>
                 <div class="control">
-                    <input type="text" class="input">
+                    <input class="input" type="text" [(ngModel)]="text" />
+                    <!-- kombinacija property i event bindinga -->
+                    <!-- text prom koju smo dodali u ts file
+                        ovime reaguje i na promene u okviru input polja
+                        i na pormene u samom kodu -->
                 </div>
             </div>
 
             <div class="field">
                 <label class="label">Author</label>
                 <div class="control">
-                    <input type="text" class="input">
+                    <input
+                        class="input"
+                        type="text"
+                        (input)="onAddAuthor($event)"
+                     />
                 </div>
             </div>
 
