@@ -13,4 +13,9 @@ import { Component } from "@angular/core";
 
 export class HeaderComponent{
     title = 'Quotes';
+
+    getTitle(): string{
+        return 'Quotes';
+        //f-ja koja vraca string koji se nalazi u promenljivoj title
+    }
 }

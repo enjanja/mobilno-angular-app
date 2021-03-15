@@ -1,7 +1,12 @@
 <nav class="navbar is-link">
     <div class="navbar-start">
-        <a href="navbar-item title" style="color: aliceblue;">
-            {{title}}
+        <a class="navbar-item title">
+            <!-- {{title}} -->
+            <!-- {{getTitle()}} -->
+            {{title===''? 'Nema naslova' : title}}
+            <!-- Ako je title prom prazna, onda vrati nema naslova
+            u suprotnom vrati to sto je napisano u prom title -->
+            <!-- === : striktna jednakost -->
         </a>
     </div>
 </nav>
