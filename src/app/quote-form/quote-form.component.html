@@ -7,14 +7,10 @@
                 <label class="label">Quote</label>
                 <div class="control">
                     <input class="input" type="text" [(ngModel)]="text" />
-                    <!-- kombinacija property i event bindinga -->
-                    <!-- text prom koju smo dodali u ts file
-                        ovime reaguje i na promene u okviru input polja
-                        i na pormene u samom kodu -->
                 </div>
             </div>
 
-            <div class="field">
+            <div class="field">s
                 <label class="label">Author</label>
                 <div class="control">
                     <input
@@ -26,13 +22,12 @@
             </div>
 
             <p class="title">'{{text}}'-{{author}}</p>
-            <!-- prvi nacin - string interpolation-->
             <p class="title" [innerText]="fullQuote">Full quote</p> 
-            <!-- drugi nacin - property binding 
-                ovde prikazuje ono sto je u type script (ts) file-u 
-                -->
+
+            
             <button class="button is-link" (click)="onAddQuote()">Add quote</button>
-            <!-- event binding -->
+
+            
         </div>
     </div>
 </div>
